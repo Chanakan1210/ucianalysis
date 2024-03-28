@@ -30,13 +30,6 @@ dt=pd.read_csv('./data/brain_stroke.csv')
 st.subheader("ข้อมูลโรคหลอดเลือดสมอง")
 st.write(dt.head(10))
 
-st.write("กราฟแท่ง")
-a=dt['gender'].mode()
-
-dx=[a,b,c,d]
-cx=pd.DataFrame(dx,index=["gender"])
-st.bar_chart(cx)
-
 import numpy as np
 import matplotlib.pyplot as plt
 labels = ['Male', 'Female','','']
