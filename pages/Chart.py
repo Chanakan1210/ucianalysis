@@ -29,3 +29,8 @@ st.page_link("http://www.google.com", label="Google", icon="🌎")
 dt=pd.read_csv('./data/brain_stroke.csv')
 st.subheader("ข้อมูลโรคหลอดเลือดสมอง")
 st.write(dt.head(10))
+
+st.subheader("สถิติข้อมูลดอกไม้ Iris")
+st.write('ผลรวม')
+cl1,cl2,cl3,cl4=st.columns(4)
+cl1.write(dt.groupby('gender').count())
