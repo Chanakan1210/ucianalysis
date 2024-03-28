@@ -35,10 +35,4 @@ st.write('ผลรวม')
 cl1,cl2,cl3,cl4=st.columns(4)
 cl1.write(dt.groupby('gender').count())
 
-st.write("กราฟแท่ง")
-dt.groupby('gender').count()
-a=dt.groupby('gender').count()
 
-dx=[a]
-cx=pd.DataFrame(dx,index=["gender"])
-st.bar_chart(cx)
