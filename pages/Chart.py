@@ -30,6 +30,15 @@ dt=pd.read_csv('./data/brain_stroke.csv')
 st.subheader("ข้อมูลโรคหลอดเลือดสมอง")
 st.write(dt.head(10))
 
+st.write("กราฟแท่ง")
+a=dt['sepal.length'].sum()
+b=dt['sepal.width'].sum()
+c=dt['petal.length'].sum()
+d=dt['petal.width'].sum()
+dx=[a,b,c,d]
+cx=pd.DataFrame(dx,index=["sepal.length", "sepal.width", "petal.length","petal.width"])
+st.bar_chart(cx)
+
 import numpy as np
 import matplotlib.pyplot as plt
 labels = ['Male', 'Female','','']
