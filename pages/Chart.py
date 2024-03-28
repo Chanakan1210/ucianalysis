@@ -21,14 +21,24 @@ html_1 = """
 st.markdown(html_1, unsafe_allow_html=True)
 st.markdown("")
 
-st.page_link("home.py", label="หน้าแรก", icon="🏠")
-st.page_link("pages/Statistic.py", label="การนำเสนอข้อมูลด้วยสถถิติ", icon="1️⃣")
-st.page_link("pages/Chart.py", label="การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล", icon="2️⃣", disabled=False)
-st.page_link("http://www.google.com", label="Google", icon="🌎")
+#st.page_link("home.py", label="หน้าแรก", icon="🏠")
+#st.page_link("pages/Statistic.py", label="การนำเสนอข้อมูลด้วยสถถิติ", icon="1️⃣")
+#st.page_link("pages/Chart.py", label="การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล", icon="2️⃣", disabled=False)
+#st.page_link("http://www.google.com", label="Google", icon="🌎")
 
 dt=pd.read_csv('./data/brain_stroke.csv')
 st.subheader("ข้อมูลโรคหลอดเลือดสมอง")
 st.write(dt.head(10))
+
+import numpy as np
+import matplotlib.pyplot as plt
+labels = ['Male', 'Female','','']
+sizes = [35,25,15,25]
+explode = (0, 0.1,0,0) 
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+st.pyplot(fig1)
 
 
 
