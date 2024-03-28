@@ -26,5 +26,3 @@ st.page_link("pages/Chart.py", label="การนำเสนอข้อมู
 st.page_link("http://www.google.com", label="Google", icon="🌎")
 
 dt=pd.read_csv('./data/brain_stroke.csv')
-st.subheader("ข้อมูลโรคหลอดเลือดสมอง")
-st.write(dt.head(10))
