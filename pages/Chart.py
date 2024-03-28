@@ -13,8 +13,8 @@ lottie_url_hello = "https://lottie.host/4712cb27-fc7f-4b90-b541-0c9d2ead268d/ess
 lottie_hello = load_lottieurl(lottie_url_hello)
 st_lottie(lottie_hello,key="hello")
 html_1 = """
-<div style="background-color:#52BE80;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>สถิติข้อมูลดอกไม้</h5></center>
+<div style="background-color:#C39BD3;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h5>กราฟแสดงข้อมูล</h5></center>
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
