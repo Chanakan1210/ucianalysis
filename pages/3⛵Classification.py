@@ -1,13 +1,13 @@
 import streamlit as st
 
-#st.image('./pic/Breast.jpg') # ข้อมูลรูปภาพตัวเอง
+st.image('./pic/Breast.jpg') # ข้อมูลรูปภาพตัวเอง
 col1, col2 = st.columns(2)
 
 with col1:
   st.header('การทำนายการเกิดโรคมะเร็งเต้านม') # ชื่อตัวเอง
-  st.subheader('ชื่อ นศ.')
+  st.subheader('นางสาวชนากานต์ จ้างอีจาง)
 with col2:
-  st.subheader('สาขาวิชาวิทยาการข้อมูล')
+  st.subheader('สาขาวิชาวิทยาการคอมพิวเตอร์')
   st.subheader('คณะวิทยาศาสตร์และเทคโนโลยี')
 
   html_1 = """
@@ -80,10 +80,10 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0]==2:
- #     st.image("./pic/iris1.jpg")
+      st.image("./pic/smile.png")
       st.header("ไม่เป็นมะเร็ง")
    else:
- #     st.image("./pic/iris3.jpg")  
+      st.image("./pic/sad.png")  
       st.header("เป็นมะเร็ง")
    st.button("ไม่ทำนายผล")
 else :
