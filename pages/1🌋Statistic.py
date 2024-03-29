@@ -17,8 +17,9 @@ st_lottie(lottie_hello,key="hello")
 
 
 st.page_link("home.py", label="หน้าแรก", icon="🏠")
-st.page_link("pages/Statistic.py", label="การนำเสนอข้อมูลด้วยสถถิติ", icon="1️⃣")
-st.page_link("pages/Chart.py", label="การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล", icon="2️⃣", disabled=False)
+st.page_link("pages/1🌋Statistic.py", label="การนำเสนอข้อมูลด้วยสถถิติ", icon="1️⃣")
+st.page_link("pages/2🛬Chart.py", label="การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล", icon="2️⃣", disabled=False)
+st.page_link("pages/3⛵Classification.py", label="การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล", icon="2️⃣", disabled=False)
 st.page_link("http://www.google.com", label="Google", icon="🌎")
 
 dt=pd.read_csv('./data/brain_stroke.csv')
